@@ -1,0 +1,18 @@
+#tilaukset{
+	display:inline-block;
+	border-style:solid;
+	margin-bottom:10px;
+	width:100%;
+}
+
+#tilaus_tablet{
+	border-style:solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}

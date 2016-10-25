@@ -1,0 +1,455 @@
+html{
+width: 100%;
+background-image: url("kuvat/tausta3.png");
+background-color: black;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+
+
+/*-- Header -------*/
+/*-----------------*/
+
+header{
+display: block;
+position: relative;
+
+}
+
+h1{
+text-align:center;
+
+font-size: 51px;
+font-style: oblique;
+}
+
+
+
+#logo{
+	
+	position:absolute;
+	z-index:50;
+	display:block;
+	height:200px;
+	width:245px;
+	left:25px;
+	bottom: -49px;
+}
+
+
+
+/*-----------------*/
+/*-----------------*/
+
+/* --Navigointipalkki------------------------ */
+/* ------------------------------------------ */
+
+#navigointi{
+	min-height:60px;
+	width:100%;
+/* 	outline-color: rgb(102,102,102); */
+/* 	outline-style: solid; */
+	display: inline-block;
+	position:static;
+/* 	background: linear-gradient(gray, white, gray); */
+}
+
+#navigointi li{
+	display:block;
+	outline-color: white;
+	outline-style: solid;
+	outline-width: 3px;
+	float:left;
+	width:20%;
+	min-height:30px;
+	text-align:center;
+	font-style:normal;
+/* 	font-family:fantasy; */
+	padding: 5px;
+	position: relative;
+	margin-left: 15px;
+
+}
+
+li a{
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 6px 3px;
+	background-color: #000000;
+	bottom: 5px;
+	
+}
+
+/* --Mobiilin navigointi--------------------- */
+/* ------------------------------------------ */
+
+#mobiili_navi{
+	display:none;
+}
+
+
+
+	
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+	
+
+
+/*---Navigoinnin linkit ja tyylim‰‰ritteet--------*/
+/* ---------------------------------------------- */
+a {
+	text-decoration: none;
+	color: white;
+	padding:5px;
+}
+
+	li a:HOVER {
+		background-color: rgb(255,255,255);
+		color: black;
+	}
+		
+	#ostoskori:HOVER{
+		background-color: transparent;
+	}
+	
+		#latauslinkki:HOVER{
+			background-color: transparent;
+		}
+	
+		#latauslinkki:ACTIVE{
+		color:blue;
+		}
+		
+	
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+
+body{
+color:white;
+width:850px;
+text-align: center;
+margin:auto;
+margin-top:30px;
+margin-bottom:30px;
+position: relative;
+outline:rgb(102,102,102);
+outline:solid;
+background: rgba(0, 0, 0, 0.5);
+}
+
+/* --Kuvat-------------------------- */
+/* --------------------------------- */
+
+#pizza_kuva_etusivu{
+	display:inline-block;
+	height:300px;
+	width:100%;
+} 
+
+#menu{
+	display:block;
+	width:100%;
+}
+
+/* --------------------------------- */
+/* --------------------------------- */
+
+/* ---------------------------------------------- */
+/* --Etusivun lohkot----------------------------- */
+
+#kuva_etusivu{
+	display:block;
+	background: rgba(0, 0, 0, 0.5);
+	width:60%;
+	float:left;
+	min-height:600px;
+	z-index: 100;
+
+}
+
+#aukioloajat_etusivu{
+	display:block;
+	background: rgba(0, 0, 0, 0.5);
+	width:40%;
+	float:right;
+	height:300px;
+	text-align: center;
+	z-index: 100;
+}
+
+#sijaintitiedot{
+	display:block;
+	background: rgba(0, 0, 0, 0.5);
+	width:40%;
+	float:left;
+	min-height:300px;
+	text-align: center;
+	z-index: 100;
+}
+
+
+#yhteystiedot{
+	widht:100%;
+	text-align:center;
+}
+
+#aukioloajat_yhteystiedot{
+	margin-top:20px;
+	width:100%;
+	text-align:center;
+}
+
+#article_text{
+	
+	padding-left:5px;
+	padding-right:5px;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+#sijaintitiedot_yhteystiedot{
+
+	width:100%;
+	
+}
+
+
+#ft{
+	float: bottom;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;	
+	width:100%;
+	padding-top: 4px;
+	outline-style:solid;
+	z-index: 100;
+}
+
+/* ---------------------------------------------- */
+/* --JavaScript - objektit----------------------- */
+
+#login_ja_cart{
+	display:block;
+	width:100%;
+	height:50px;
+	text-align:right;
+	color:white;
+	
+	
+}
+
+#logout{
+	display:inline;
+	float:right;
+}
+
+#login_ja_cart p{
+	display:inline;
+	
+}
+
+#login{
+	background: rgb(102,102,102);
+	padding-left: 5px;
+	position:absolute;
+	z-index:50;
+	display:none;
+	height:200px;
+	width:300px;
+	left:550px;
+	text-align:left;
+}
+
+#cart{
+	position:absolute;
+	display:block;
+	
+}
+
+#rekis_linkki{
+	color:blue;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+
+#pizzalista{
+	
+	display: inline-block;
+	margin-left:auto;
+	postition:relative;
+	height: auto;
+	float:left;
+}
+
+/* Pizzablockin ominaisuudet: */
+
+#pizzablock{
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.5);
+	height: 84px;
+	width: 350px;
+	position:relative;
+	margin-left: 20px;
+	
+}
+
+
+
+
+@keyframes valitsepizza{
+	0%{background: rgba(96,96,96, 1);
+		box-shadow: 0 0 0px white;};
+	100%{background: rgba(149, 140, 170, 1);
+		};
+	
+}
+
+#valinta{
+	display: inline-block;
+	position:static;
+/* 	margin-left: 301px; */
+	height:28px;
+}
+
+
+pre{
+	
+	font-family:arial;
+	padding: 10px;
+}
+
+/* -------------------------------------------------- */
+
+#aukiolo_table{
+	border: medium;
+	border-style: groove;
+}
+
+#ostoskorin_tuotteet{
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+
+#ostoskorin_table{
+	width:100%;
+	
+}
+
+#ostoskorin_header{
+	text-decoration: underline;
+}  
+
+#lisatietoja{
+	width:250px;
+	height:120px;
+}
+
+#tilausvahvistus{
+	margin-bottom:10px;
+}
+
+/*----------------------------------------------------*/
+
+#kirjautbutton{
+	background-color: #ffffff; 
+    border: none;
+    color: black;
+    border-radius: 8px;
+}
+
+#kirjautbutton:hover{
+	background-color: #000000; 
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+#rekistbutton{
+	background-color: #ffffff; 
+    border: none;
+    color: black;
+    border-radius: 8px;
+}
+
+#rekistbutton:hover{
+	background-color: #808080; 
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+#valinta{
+	background-color: #ffffff; 
+    border: none;
+    color: black;
+    border-radius: 8px;
+}
+
+#valinta:hover{
+	background-color: #808080; 
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+#poistapizzabut{
+	background-color: #ffffff; 
+    border: none;
+    color: black;
+    border-radius: 8px;
+}
+
+#poistapizzabut:hover{
+	background-color: #808080; 
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+#poistajuomabut{
+	background-color: #ffffff; 
+    border: none;
+    color: black;
+    border-radius: 8px;
+}
+
+#poistajuomabut:hover{
+	background-color: #808080; 
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+#tilaabutton{
+	background-color: #ffffff; 
+    border: none;
+    color: black;
+    border-radius: 8px;
+}
+
+#tilaabutton:hover{
+	background-color: #808080; 
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+#lisatietoja{
+	border-style: solid;
+    border-width: 5px;
+}
+
+
+
+
